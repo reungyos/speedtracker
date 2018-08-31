@@ -1,0 +1,2 @@
+navigate    https://www.anantara.com/en/
+setViewportSize    1366    702
