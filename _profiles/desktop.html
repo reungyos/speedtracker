@@ -25,10 +25,10 @@ interval: 12
 # https://www.npmjs.com/package/webpagetest
 #
 parameters:
+  connectivity: "Cable"
   script:[{navigate: 'https://www.anantara.com/en/'},
 		  {setViewportSize: '1366', '702'}
 		 ]
-  connectivity: "Cable"
   location: "ec2-ap-southeast-1:Chrome"
   runs: 1
   video: true 
