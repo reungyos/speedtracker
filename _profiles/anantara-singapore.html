@@ -24,15 +24,21 @@ interval: 12
 #
 # https://www.npmjs.com/package/webpagetest
 #
+
+var script = wpt.scriptToString([
+ {navigate: 'https://www.anantara.com/en/'},
+ {setValue: ['1366', '702']},
+ 'waitForComplete'
+])
+#
+test:script
+#
 parameters:
   connectivity: "Cable"
   location: "ec2-ap-southeast-1:Chrome"
   runs: 1
   url: "https://www.anantara.com/en/"
   video: true
-  emulateMobile: false
-
-
 #
 # The URL of the WebPageTest instance to be used with this profile. Please note that
 # if you decide to encrypt this URL, the filmstrip section will not be displayed.
@@ -63,7 +69,4 @@ budgets:
     metric: firstPaint
     max: 2000
     alerts: ["thirdEmailAlert"]
-	
-
-	
 ---
