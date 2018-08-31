@@ -24,20 +24,12 @@ interval: 12
 #
 # https://www.npmjs.com/package/webpagetest
 #
-var script = wpt.scriptToString([
- {navigate: 'https://www.anantara.com/en/'},
- {setViewportSize: ['1366', '702']},
- 'waitForComplete'
-])
-wpt.runTest(script,{
+parameters:
   connectivity: "Cable"
   location: "ec2-ap-southeast-1:Chrome"
+  test: "https://reungyos.github.io/speedtracker/wptscript.txt"
   runs: 1
-  url: "https://www.anantara.com/en/"
-  video: true
- },function (err, result) {
-  console.log('Video frames:', result.data.runs[1].firstView.steps[0].videoFrames)
-}) 
+  video: true  
 #
 # The URL of the WebPageTest instance to be used with this profile. Please note that
 # if you decide to encrypt this URL, the filmstrip section will not be displayed.
