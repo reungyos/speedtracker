@@ -27,8 +27,9 @@ interval: 12
 parameters:
   connectivity: "Cable"
   location: "ec2-ap-southeast-1:Chrome"
-  url: "https://www.anantara.com/en/"
-  test: wptscript.txt
+  script:[{navigate: 'https://www.anantara.com/en/'},
+		  {setViewportSize: '1366'  '702'}
+		 ]
   runs: 1
   video: true  
 #
