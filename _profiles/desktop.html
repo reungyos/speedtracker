@@ -25,11 +25,14 @@ interval: 12
 # https://www.npmjs.com/package/webpagetest
 #
 parameters:
-  url: "https://www.anantara.com/en/"
+  url: ""
   connectivity: "Cable"
   location: "ec2-ap-southeast-1:Firefox"
   runs: 1
-  video: true  
+  video: true
+  script:[
+  {setViewportSize: '1366 702'}
+  ]  
 #
 # The URL of the WebPageTest instance to be used with this profile. Please note that
 # if you decide to encrypt this URL, the filmstrip section will not be displayed.
