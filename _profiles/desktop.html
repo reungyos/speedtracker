@@ -27,11 +27,11 @@ interval: 12
 parameters:
   connectivity: "Cable"
   location: "ec2-ap-southeast-1:Firefox"
-  script:[{navigate: 'https://www.anantara.com/en/'},
-		  {setViewportSize: 1366  702}
-		 ]
   runs: 1
   video: true 
+  script: [{navigate: 'https://www.anantara.com/en/'},
+		  {setViewportSize: 1366  702}
+		  ]
 #
 # The URL of the WebPageTest instance to be used with this profile. Please note that
 # if you decide to encrypt this URL, the filmstrip section will not be displayed.
