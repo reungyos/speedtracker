@@ -25,13 +25,13 @@ interval: 12
 # https://www.npmjs.com/package/webpagetest
 #
 parameters:
+  script:[{navigate: 'https://www.anantara.com/en/'},
+		  {setViewportSize: '1366', '702'}
+		 ]  
   connectivity: "Cable"
   location: "ec2-ap-southeast-1:Chrome"
-  script:[{navigate: 'https://www.anantara.com/en/'},
-		  {setViewportSize: '1366'  '702'}
-		 ]
   runs: 1
-  video: true  
+  video: true 
 #
 # The URL of the WebPageTest instance to be used with this profile. Please note that
 # if you decide to encrypt this URL, the filmstrip section will not be displayed.
