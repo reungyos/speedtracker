@@ -30,7 +30,7 @@ parameters:
   location: "ec2-ap-southeast-1:Chrome"
   runs: 1
   video: true
-  script: [{navigate: "https://www.anantara.com/en"},{ setViewportSize: ["1920","1080"] }]
+  script: navigate https://www.anantara.com/en setViewportSize 1920 1080
 #
 # The URL of the WebPageTest instance to be used with this profile. Please note that
 # if you decide to encrypt this URL, the filmstrip section will not be displayed.
