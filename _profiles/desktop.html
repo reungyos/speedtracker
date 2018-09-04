@@ -24,16 +24,14 @@ interval: 12
 #
 # https://www.npmjs.com/package/webpagetest
 #
+
 parameters:
   url: "https://www.anantara.com/en"
   connectivity: "Cable"
   location: "ec2-ap-southeast-1:Chrome"
   runs: 1
   video: true
-  test:[
-		{navigate: 'https://www.anantara.com/en'},
-		{setViewportSize: ['1920', '1080']}
-	   ]
+  test:"https://raw.githubusercontent.com/reungyos/speedtracker/master/wpt-script.txt"
 #
 # The URL of the WebPageTest instance to be used with this profile. Please note that
 # if you decide to encrypt this URL, the filmstrip section will not be displayed.
