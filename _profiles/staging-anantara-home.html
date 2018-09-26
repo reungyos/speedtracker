@@ -3,7 +3,7 @@
 # The human-friendly name of the profile. Whenever you're asked for the profile
 # ID, it refers to the name of the profile file — in this case, "default".
 #
-name: "Desktop test"
+name: "Staging Anantara Homepage"
 
 #
 # The default profile will be the one shown when accessing the root URL of your
@@ -24,14 +24,14 @@ interval: 12
 #
 # https://www.npmjs.com/package/webpagetest
 #
-
 parameters:
-  url: "https://www.anantara.com/en"
   connectivity: "Cable"
-  location: "ec2-ap-southeast-1:Chrome"
+  location: "NewYork:Chrome"
   runs: 1
+  url: "https://staging.anantara.com/en"
   video: true
-  test:"https://raw.githubusercontent.com/reungyos/speedtracker/master/wpt-script.txt"
+
+
 #
 # The URL of the WebPageTest instance to be used with this profile. Please note that
 # if you decide to encrypt this URL, the filmstrip section will not be displayed.
