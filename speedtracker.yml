@@ -76,6 +76,9 @@ alerts:
   thirdEmailAlert:
     type: "email"
     recipients: ["9a4d25830e95751d6b8d934a8c2501a9947ab5f8"]
+  yosEmailAlert:
+    type: "email"
+    recipients: ["894c399f08877f315190bc67882200b4c837b9fa38"]
 #  slackAlert:
 #    type: "slack"
 #    hookUrl: "ENCRYPTED_SLACK_HOOK_URL"
