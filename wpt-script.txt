@@ -1,2 +1,0 @@
-navigate https://www.anantara.com/en 
-setViewportSize 1920 1080
